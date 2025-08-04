@@ -1,34 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a>
-</nav>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valutive Reviews</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valutive Reviews</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
 <body>
-    <header>
-        <h1>Valutive Reviews</h1>
-        <p>Helping You Choose Smarter Tech.</p>
-    </header>
-    <main>
-        <section class="post">
-            <h2>Top 5 Budget Smartphones of 2025</h2>
-            <p>Looking for an affordable smartphone? Here are our top picks for 2025 that offer great performance without breaking the bank.</p>
-            <ul>
-                <li><strong>Redmi Note 13 Pro</strong> – Great camera and battery life. <a href="#">Buy on Amazon</a></li>
-                <li><strong>Samsung Galaxy A15</strong> – Smooth display and long updates. <a href="#">Buy on Amazon</a></li>
-                <li><strong>Infinix Zero 30</strong> – Best for content creators. <a href="#">Buy on Amazon</a></li>
-                <li><strong>iPhone SE (3rd Gen)</strong> – For Apple lovers on a budget. <a href="#">Buy on Amazon</a></li>
-                <li><strong>Realme Narzo 60</strong> – Stylish with solid specs. <a href="#">Buy on Amazon</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
+  <header class="animate__animated animate__fadeInDown">
+    <h1>Valutive Reviews</h1>
+    <p>Helping You Choose Smarter Tech</p>
+  </header>
+
+  <nav class="navbar animate__animated animate__fadeInUp">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Categories ▼</button>
+      <div class="dropdown-content">
+        <a href="smartphones.html">Smartphones</a>
+        <a href="laptops.html">Laptops</a>
+        <a href="earbuds.html">Earbuds</a>
+      </div>
+    </div>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="post" data-aos="fade-up">
+      <h2>Top 5 Budget Smartphones of 2025</h2>
+      <p>Looking for an affordable smartphone? Here are our top picks for 2025 that offer great performance without breaking the bank.</p>
+      
+      <div class="product-list">
+        <!-- Product 1 -->
+        <div class="product-card" data-aos="zoom-in">
+          <img src="https://via.placeholder.com/200" alt="Redmi Note 13 Pro">
+          <h3>Redmi Note 13 Pro</h3>
+          <p>Great camera and battery life.</p>
+          <a class="buy-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-aos="zoom-in">
+          <img src="https://via.placeholder.com/200" alt="Samsung Galaxy A15">
+          <h3>Samsung Galaxy A15</h3>
+          <p>Smooth display and long updates.</p>
+          <a class="buy-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-aos="zoom-in">
+          <img src="https://via.placeholder.com/200" alt="Infinix Zero 30">
+          <h3>Infinix Zero 30</h3>
+          <p>Best for content creators.</p>
+          <a class="buy-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-aos="zoom-in">
+          <img src="https://via.placeholder.com/200" alt="iPhone SE (3rd Gen)">
+          <h3>iPhone SE (3rd Gen)</h3>
+          <p>For Apple lovers on a budget.</p>
+          <a class="buy-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-aos="zoom-in">
+          <img src="https://via.placeholder.com/200" alt="Realme Narzo 60">
+          <h3>Realme Narzo 60</h3>
+          <p>Stylish with solid specs.</p>
+          <a class="buy-btn" href="#" target="_blank">Buy on Amazon</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Valutive Reviews. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
         <p>© 2025 TechScout Reviews. All rights reserved.</p>
     </footer>
 </body>
