@@ -195,3 +195,34 @@ nav a:hover {
     display: block;
   }
 }
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+#site-search {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#search-results {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+  display: none;
+  z-index: 999;
+}
+
+#search-results a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+#search-results a:hover {
+  background: #f0f0f0;
+}
