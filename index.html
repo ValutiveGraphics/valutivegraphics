@@ -123,6 +123,46 @@
     document.getElementById("nav-menu").classList.toggle("active");
   });
 </script>
+<script>
+  const pages = [
+    { title: "Home", url: "index.html" },
+    { title: "Smartphones", url: "smartphones.html" },
+    { title: "Laptops", url: "laptops.html" },
+    { title: "Earbuds", url: "earbuds.html" },
+    { title: "About", url: "about.html" },
+    { title: "Contact", url: "contact.html" },
+    { title: "Privacy Policy", url: "privacy.html" },
+    { title: "Disclaimer", url: "disclaimer.html" },
+    { title: "Terms & Conditions", url: "terms.html" }
+  ];
 
+  const searchInput = document.getElementById("site-search");
+  const resultsContainer = document.getElementById("search-results");
+
+  searchInput.addEventListener("input", function () {
+    const query = this.value.toLowerCase();
+    resultsContainer.innerHTML = "";
+    
+    if (query) {
+      const filtered = pages.filter(page => 
+        page.title.toLowerCase().includes(query)
+      );
+
+      if (filtered.length > 0) {
+        filtered.forEach(page => {
+          const link = document.createElement("a");
+          link.href = page.url;
+          link.textContent = page.title;
+          resultsContainer.appendChild(link);
+        });
+        resultsContainer.style.display = "block";
+      } else {
+        resultsContainer.style.display = "none";
+      }
+    } else {
+      resultsContainer.style.display = "none";
+    }
+  });
+</script>
 </body>
 </html>
