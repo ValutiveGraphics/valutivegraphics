@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Valutive Reviews</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <div class="nav-container">
+    <a href="index.html" class="logo">Valutive Reviews</a>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Categories ▼</button>
+        <div class="dropdown-content">
+          <a href="smartphones.html">Smartphones</a>
+          <a href="laptops.html">Laptops</a>
+          <a href="earbuds.html">Earbuds</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Contact Section -->
+<section style="max-width: 700px; margin: 50px auto; text-align: center; padding: 20px;">
+  <h1 class="animate__animated animate__fadeInDown">Contact Us</h1>
+  <p data-aos="fade-up" style="font-size: 1.1em; color: #444; margin-top: 15px;">
+    Have a question, feedback, or partnership request? We’d love to hear from you.
+  </p>
+
+  <!-- Contact Form -->
+  <form action="https://formsubmit.co/valutivegraphics@gmail.com" method="POST" style="margin-top: 30px; text-align: left;">
+    <input type="hidden" name="_captcha" value="false">
+    <label>Name:</label>
+    <input type="text" name="name" required style="width: 100%; padding: 10px; margin: 5px 0 15px;">
+
+    <label>Email:</label>
+    <input type="email" name="email" required style="width: 100%; padding: 10px; margin: 5px 0 15px;">
+
+    <label>Message:</label>
+    <textarea name="message" rows="5" required style="width: 100%; padding: 10px; margin: 5px 0 15px;"></textarea>
+
+    <!-- Google reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6LdStporAAAAAHUMoEMTmxJQ6WjDTrP4VcT0gCaz" style="margin-bottom: 15px;"></div>
+
+    <button type="submit" class="buy-btn" style="width: 100%;">Send Message</button>
+  </form>
+
+  <!-- Direct Contact Info -->
+  <div style="margin-top: 40px;" data-aos="fade-up">
+    <p><strong>Email:</strong> <a href="mailto:valutivegraphics@gmail.com">valutivegraphics@gmail.com</a></p>
+    <p>
+      <a href="https://www.instagram.com/valutivegraphics/profilecard/?igsh=YmhzZG01OGg4M3Fj" target="_blank">Instagram</a> | 
+      <a href="https://www.linkedin.com/in/precious-omeke-9011a5273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Valutive Reviews. All rights reserved.</p>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+
+<!-- Mobile Menu Script -->
+<script>
+  document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("nav-menu").classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
