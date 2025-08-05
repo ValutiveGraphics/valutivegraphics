@@ -1,29 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Affiliate Disclaimer - Valutive Reviews</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disclaimer - Valutive Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
 <body>
+
+<!-- Navbar -->
 <header>
-  <h1>Affiliate Disclaimer</h1>
+  <div class="nav-container">
+    <a href="index.html" class="logo">Valutive Reviews</a>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Categories ▼</button>
+        <div class="dropdown-content">
+          <a href="smartphones.html">Smartphones</a>
+          <a href="laptops.html">Laptops</a>
+          <a href="earbuds.html">Earbuds</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="disclaimer.html" class="active">Disclaimer</a>
+    </nav>
+  </div>
 </header>
-<main>
-  <p>Last updated: August 4, 2025</p>
 
-  <p>At <strong>Valutive Reviews</strong>, we believe in transparency. Please note that some of the links on our site are affiliate links. This means that if you click on the link and make a purchase, we may earn a small commission at no extra cost to you.</p>
+<!-- Disclaimer Content -->
+<section style="max-width: 900px; margin: 50px auto; padding: 20px;">
+  <h1 data-aos="fade-up">Disclaimer</h1>
+  <p data-aos="fade-up">Last updated: August 4, 2025</p>
 
-  <p>We only recommend products and services that we genuinely believe will bring value to our readers. Our opinions are based on research, testing, and customer feedback.</p>
+  <p data-aos="fade-up">
+    The information provided on <strong>Valutive Reviews</strong> is for general informational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the site.
+  </p>
 
-  <h2>Amazon Associates Disclosure</h2>
-  <p>Valutive Reviews is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by linking to Amazon.com and affiliated sites.</p>
+  <h2 data-aos="fade-up">Affiliate Disclosure</h2>
+  <p data-aos="fade-up">
+    Some of the links on this site may be affiliate links. This means that we may earn a commission if you click on the link or make a purchase using the link. This comes at no extra cost to you. These commissions help support the site and keep our content free.
+  </p>
 
-  <h2>Why This Matters</h2>
-  <p>Affiliate commissions help us maintain this website and continue to provide quality content. We appreciate your support.</p>
-</main>
+  <h2 data-aos="fade-up">External Links Disclaimer</h2>
+  <p data-aos="fade-up">
+    Our website may contain links to external websites that are not provided or maintained by or in any way affiliated with Valutive Reviews. Please note that we do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
+  </p>
+
+  <h2 data-aos="fade-up">Professional Advice Disclaimer</h2>
+  <p data-aos="fade-up">
+    The content on Valutive Reviews is for informational purposes only and should not be considered professional, financial, or technical advice. Always seek the advice of qualified professionals before making any decisions based on the information provided on this website.
+  </p>
+
+  <h2 data-aos="fade-up">Limitation of Liability</h2>
+  <p data-aos="fade-up">
+    Under no circumstance shall Valutive Reviews or its contributors be held liable for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided. Your use of the site and your reliance on any information is solely at your own risk.
+  </p>
+
+  <h2 data-aos="fade-up">Contact Us</h2>
+  <p data-aos="fade-up">
+    If you have any questions about this Disclaimer, you can contact us at 
+    <a href="mailto:valutivegraphics@gmail.com">valutivegraphics@gmail.com</a>.
+  </p>
+</section>
+
+<!-- Footer -->
 <footer>
   <p>© 2025 Valutive Reviews. All rights reserved.</p>
 </footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+<script>
+  document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("nav-menu").classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
