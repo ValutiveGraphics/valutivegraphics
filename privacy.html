@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy Policy - Valutive Reviews</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 </head>
 <body>
+
+<!-- Navbar -->
 <header>
-  <h1>Privacy Policy</h1>
+  <div class="nav-container">
+    <a href="index.html" class="logo">Valutive Reviews</a>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Categories ▼</button>
+        <div class="dropdown-content">
+          <a href="smartphones.html">Smartphones</a>
+          <a href="laptops.html">Laptops</a>
+          <a href="earbuds.html">Earbuds</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html" class="active">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </div>
 </header>
-<main>
-  <p>Last updated: August 4, 2025</p>
 
-  <p>At <strong>Valutive Reviews</strong>, we value your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our website.</p>
+<!-- Privacy Policy Content -->
+<section style="max-width: 900px; margin: 50px auto; padding: 20px;">
+  <h1 data-aos="fade-up">Privacy Policy</h1>
+  <p data-aos="fade-up">Last updated: August 4, 2025</p>
 
-  <h2>Information We Collect</h2>
-  <ul>
-    <li>Non-personal information such as browser type, pages visited, and time spent on the site.</li>
-    <li>Personal information only if you contact us voluntarily (such as your name and email).</li>
+  <p data-aos="fade-up">
+    Welcome to <strong>Valutive Reviews</strong>. Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you visit our website.
+  </p>
+
+  <h2 data-aos="fade-up">Information We Collect</h2>
+  <ul data-aos="fade-up">
+    <li>Personal information you provide via our contact form, such as your name and email address.</li>
+    <li>Non-personal information such as browser type, device type, and pages visited.</li>
+    <li>Cookies to enhance user experience and serve relevant ads.</li>
   </ul>
 
-  <h2>How We Use Information</h2>
-  <ul>
-    <li>To improve the quality and relevance of our content.</li>
-    <li>To respond to inquiries and provide support.</li>
-    <li>To display targeted advertisements from partners such as Google AdSense.</li>
+  <h2 data-aos="fade-up">How We Use Your Information</h2>
+  <ul data-aos="fade-up">
+    <li>To respond to inquiries and provide customer support.</li>
+    <li>To improve website functionality and content.</li>
+    <li>To display personalized ads via Google AdSense.</li>
   </ul>
 
-  <h2>Third-Party Services</h2>
-  <p>We use third-party services like Google AdSense and Amazon Associates. These may use cookies to serve relevant ads based on your interests.</p>
+  <h2 data-aos="fade-up">Cookies & Google AdSense</h2>
+  <p data-aos="fade-up">
+    We use cookies to deliver better user experiences and targeted ads. Google, as a third-party vendor, uses cookies to serve ads based on your prior visits to our site. You can opt out of personalized advertising by visiting 
+    <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a>.
+  </p>
 
-  <h2>Your Rights</h2>
-  <p>You may choose to disable cookies in your browser settings, but some features of our site may not work as intended.</p>
+  <h2 data-aos="fade-up">Third-Party Links</h2>
+  <p data-aos="fade-up">
+    Our site may contain links to third-party websites. We are not responsible for the privacy practices of those websites.
+  </p>
 
-  <h2>Contact Us</h2>
-  <p>If you have any questions about our Privacy Policy, please contact us at info@valutivereviews.com.</p>
-</main>
+  <h2 data-aos="fade-up">Your Rights</h2>
+  <p data-aos="fade-up">
+    You can request to see or delete your personal information we have collected by contacting us.
+  </p>
+
+  <h2 data-aos="fade-up">Contact Us</h2>
+  <p data-aos="fade-up">
+    If you have questions about this Privacy Policy, please contact us at 
+    <a href="mailto:valutivegraphics@gmail.com">valutivegraphics@gmail.com</a>.
+  </p>
+</section>
+
+<!-- Footer -->
 <footer>
   <p>© 2025 Valutive Reviews. All rights reserved.</p>
 </footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+<script>
+  document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("nav-menu").classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
